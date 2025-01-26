@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #b8b8b8, #d4d4d4);
+}
+header{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    text-align: center;
+}
+header div{
+    width: 29%;
+    height: 10px;
+    margin-top: 12%;
+    margin-bottom: 0;
+    margin-right:4px ;
+    
+}
+header img{
+    width: 100px;
+    height: 100px;
+}
+.one{
+    background-color: #1d6662;
+}
+.two{
+    background-color: #1D7A7A;
+}
+.three{
+    background-color: gray;
+}
+.header {
+    background-color: #1B2B54;
+    padding: 24px;
+    text-align: center;
+}
+
+.header h1 {
+    color: white;
+    margin: 0;
+    font-size: 2rem;
+}
+
+
+.title-button {
+    background-color: #1D7A7A;
+    color: white;
+    border: white solid ;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.title-button:hover {
+    background-color: #166363;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-item {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-item::before {
+    content: "▶";
+    color: #2563eb;
+}
+
+.info-link {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.citation {
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+
+
+.cat-owners { background-color: #008080; }
+.fish-owners { background-color: #4C9C64; }
+.consultations { background-color: #CC0000; }
+.dog-owners { background-color: #90C957; }
+.small-animals { background-color: #8B2BE2; }
+
+.bottom-nav {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nav-button {
+    padding: 8px 24px;
+    border: wheat solid ;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: opacity 0.2s;
+}
+
+.nav-button:hover {
+    opacity: 0.9;
+}
+
+
+.end-button {
+    border: black solid ;
+    background-color: rgb(229, 231, 235);
+    padding: 8px 24px;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.end-button span {
+    color: rgb(17, 24, 39);
+    font-family: system-ui, -apple-system, sans-serif;
+    font-weight: 500;
+}
+.nav-cat { background-color: #1D7A7A; }
+.nav-cat:hover { background-color: #166363; }
+
+.nav-dog { background-color: #90BE6D; }
+.nav-dog:hover { background-color: #7da55d; }
+
+.nav-fish { background-color: #43AA8B; }
+.nav-fish:hover { background-color: #389178; }
+
+.nav-small { background-color: #9D4EDD; }
+.nav-small:hover { background-color: #8a44c4; }
+
+.nav-consult { background-color: #F94144; }
+.nav-consult:hover { background-color: #f82828; }
+
+.nav-home { background-color: #1B2B52; }
+.nav-home:hover { background-color: #142040; }
+
+.nav-end {
+    background-color: transparent;
+    border: 2px solid #1f2937;
+    color: #1f2937;
+}

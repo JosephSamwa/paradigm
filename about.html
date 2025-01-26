@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Paradigm Pet Professionals</title>
+    <style>
+        :root {
+            --midnight-blue: #003B6D;
+            --blue-sky: #6699CC;
+            --dim-gray: #676767;
+            --silver: #BDBDBD;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dim-gray);
+            background-color: var(--white);
+        }
+        
+    
+        header {
+            background-color: var(--midnight-blue);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header img {
+            max-height: 80px;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: var(--blue-sky);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--silver);
+        }
+
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #444;
+            text-align: center;
+        }
+
+        p {
+            margin: 0.5rem 0;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        strong {
+            color: #555;
+        }
+
+        /* Section Styles */
+        .section {
+            background: #fff;
+            margin: 2rem auto;
+            padding: 2rem;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .about-content {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Decorative Styles */
+        .section:nth-child(odd) {
+            background: #f0f8ff;
+        }
+
+        .section:nth-child(even) {
+            background: #ffffff;
+        }
+
+        .section ul {
+            list-style-type: disc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .about-content {
+                font-size: 0.9rem;
+            }
+        }
+
+        footer {
+            background-color: var(--midnight-blue);
+            color: var(--silver);
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: var(--blue-sky);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--silver);
+        }
+        
+        ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    li {
+      position: relative;
+    }
+
+    li a {
+      /*display: block;*/
+      text-decoration: none;
+      
+      
+    }
+
+    li a:hover {
+      background-color: fff;
+      z-index: 1000;
+    }
+    
+    .sub-menu {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background-color: #000000;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show the sub-menu when hovering over the parent <li> */
+    li:hover .sub-menu {
+      display: block;
+    }
+
+    .sub-menu li a {
+      white-space: nowrap;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="paradigmlogo.png" alt="Paradigm Pet Professionals Logo">
+        <div>
+            <h1>About Paradigm Pet Professionals</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <li><a href="petcare.html">Pet Care Guides</a>
+            <ul class="sub-menu">
+            <li><a href="birds.html">Birds</a></li>
+          <li><a href="cats.html">Cats</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="fish.html">Fish</a></li>
+          <li><a href="small-animals.html">Other Animals</a></li>
+        </ul>
+        </li>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <section class="section">
+        <h2>Our Story</h2>
+        <div class="about-content">
+            <p>Paradigm Pet Professionals was founded on a simple yet profound belief: every pet deserves a life filled with love, health, and happiness. With over 12 years of experience in the pet care industry, we have made it our mission to empower pet owners and professionals with the knowledge and resources they need to provide exceptional care.</p>
+
+            <p>Our journey began with a passion for helping pets and their families live harmonious lives. Over the years, we have collaborated with veterinarians, shelters, breeders, and countless pet owners to develop tailored solutions for pet care. Our approach is rooted in evidence-based practices, ensuring that every recommendation we provide is grounded in the latest research and best practices.</p>
+
+            <p>From humble beginnings to becoming a trusted name in the pet care community, we owe our success to our dedicated team of experts and the trust of our clients. Whether you’re a first-time pet owner or a seasoned professional, we are here to guide you every step of the way.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Our Mission</h2>
+        <div class="about-content">
+            <p>To inspire and support pet lovers and professionals by providing evidence-based advice, personalized consultations, and a commitment to the lifelong well-being of pets.</p>
+
+            <p>We believe that when pets thrive, families and communities thrive too. Our mission is to bridge the gap between pet care knowledge and practice, ensuring every pet has access to the love and care they deserve.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Our Values</h2>
+        <div class="about-content">
+            <ul>
+                <li><strong>Compassion:</strong> Every pet and owner deserves understanding and empathy.</li>
+                <li><strong>Integrity:</strong> We prioritize honesty and transparency in everything we do.</li>
+                <li><strong>Excellence:</strong> We are committed to providing top-tier services and advice.</li>
+                <li><strong>Community:</strong> Building a network of support for pets and their families.</li>
+                <li><strong>Innovation:</strong> Staying ahead with the latest research and best practices in pet care.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Paradigm Pet Professionals | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

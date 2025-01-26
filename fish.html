@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Owners</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        .title {
+            display: inline-block;
+            background-color: #47996D;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 9999px;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .info-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: start;
+        }
+
+        .arrow {
+            color: #2563eb;
+            margin-right: 8px;
+        }
+
+        .links {
+            padding-left: 24px;
+        }
+
+        .links a {
+            color: #4b5563;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .links a:hover {
+            color: #2563eb;
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-caption {
+            font-size: 14px;
+            color: #4b5563;
+            margin-top: 8px;
+        }
+
+        .image-caption a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .image-caption a:hover {
+            text-decoration: underline;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <header >
+        <div class="one"></div><div class="two"></div><div class="three"></div>
+        <img src="paradigmlogo.png" alt="Paradigm Pet Professionals Logo">
+        
+    </header>
+    <div class="header">
+        <h1 class="title">Fish Owners</h1>
+    </div>
+
+    <div class="content">
+        <div class="info">
+            <ul class="info-list">
+                <li><span class="arrow">➤</span> Weekly water testing: pH, ammonia, nitrates, nitrites.</li>
+                <li><span class="arrow">➤</span> Freshwater Fish: pH 6.8-7.6; no ammonia.</li>
+                <li><span class="arrow">➤</span> Saltwater Fish: pH 7.6-8.4; salinity 1.020-1.028 sg.</li>
+                <li><span class="arrow">➤</span> Maintain toxin-free water and provide species-compatible environments.</li>
+                <li><span class="arrow">➤</span> Consult "Pexperts" for fish compatibility and care advice.</li>
+                <li><span class="arrow">➤</span> Learn more from our site:</li>
+            </ul>
+            <div class="links">
+                <a href="https://konzie.digital/paradigm/fish.html">https://konzie.digital/paradigm/fish.html</a>
+                <a href="http://www.theaquariumwiki.org/wiki/How_to_make_tap_water_safe_for_fish">http://www.theaquariumwiki.org/wiki/How_to_make_tap_water_safe_for_fish</a>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-26%20224705-OSjk13uRZFT4S2mamAn7IA4Oi2Z1ch.png" alt="Fish care illustration">
+            <p class="image-caption">
+                Doug Ludemann. (2024, August 25). How to take care of your fish (with pictures). wikiHow. Retrieved January 9, 2025, from 
+                <a href="https://www.wikihow.com/Take-Care-of-Your-Fish">https://www.wikihow.com/Take-Care-of-Your-Fish</a>
+            </p>
+        </div>
+    </div>
+
+    <nav class="bottom-nav">
+        <button class="nav-button cat-owners" onclick="window.location.href='./cats.html'">Cat Owners</button>
+        <button class="nav-button dog-owners" onclick="window.location.href='./dogs.html'">Dog Owners</button>
+        <button class="nav-button fish-owners" onclick="window.location.href='./fish.html'">Fish Owners</button>
+        <button class="nav-button small-animals" onclick="window.location.href='./small-animals.html'">Small Animals</button>
+        <button class="nav-button consultations" onclick="window.location.href='./consultations.html'">Consultations</button>
+        <button class="nav-button" style="background-color: #1B2B54;" onclick="window.location.href='./index.html'">Home</button>
+        <button class="end-button"><span>END</span></button>
+            
+        
+    </nav>
+</body>
+</html>

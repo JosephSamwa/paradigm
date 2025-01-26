@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Pet Professionals | Birds </title>
+    <style>
+        :root {
+            --midnight-blue: #003B6D;
+            --blue-sky: #6699CC;
+            --dim-gray: #676767;
+            --silver: #BDBDBD;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dim-gray);
+            background-color: var(--white);
+        }
+
+        header {
+            background-color: var(--midnight-blue);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header img {
+            max-height: 80px;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: var(--blue-sky);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--silver);
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: var(--midnight-blue);
+            margin-bottom: 20px;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: var(--midnight-blue);
+            color: var(--silver);
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: var(--blue-sky);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--silver);
+        }
+        
+        ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    li {
+      position: relative;
+    }
+
+    li a {
+      /*display: block;*/
+      text-decoration: none;
+      
+      
+    }
+
+    li a:hover {
+      background-color: fff;
+      z-index: 1000;
+    }
+    
+    .sub-menu {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background-color: #000000;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show the sub-menu when hovering over the parent <li> */
+    li:hover .sub-menu {
+      display: block;
+    }
+
+    .sub-menu li a {
+      white-space: nowrap;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="paradigmlogo.png" alt="Paradigm Pet Professionals Logo">
+        <div>
+            <h1>Paradigm Pet Professionals | Birds </h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <li><a href="petcare.html">Pet Care Guides</a>
+            <ul class="sub-menu">
+            <li><a href="birds.html">Birds</a></li>
+          <li><a href="cats.html">Cats</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="fish.html">Fish</a></li>
+          <li><a href="small-animals.html">Other Animals</a></li>
+        </ul>
+        </li>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <section class="section">
+        <h2>Birds</h2>
+        <div class="about-content">
+            <p>Birds are very intriguing creatures as they can range from birds as small as a Cuban bee hummingbird (about two inches long and a little over 1/20 of an ounce) to as large as an ostrich. While most birds fly, there are some that don't. Birds are amazing and each breed is unique in its own way, particularly when it comes to their relational needs and well-being. </p>
+            <p>Unfortunately, birds can experience sadness and depression just like humans. A number of root causes may be responsible for your bird's depression such as an illness (either physical or mental), losing its companion, or increasingly becoming bored. Some signs to help identify if your bird is experiencing depression may include the following:</p>
+<ul>
+    <li>reduced appetite
+    <li>becoming increasingly irritable</li>
+    <li>aggressive behavior</li>
+    <li>songs have a different, more solemn tone</li>
+</ul>
+<p>Be sure to tell your veterinarian if you see signs of any of these symptoms. Just like many illnesses, identifying and treating the symptoms earlier may drastically increase the lifespan of your birdie.
+</p>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2024 Paradigm Pet Professionals | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

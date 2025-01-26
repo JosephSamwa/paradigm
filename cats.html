@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Owners - Veterinary Care</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #b8b8b8, #d4d4d4);
+        }
+        header{
+            width: 100%;
+            display: flex;
+            background-color: white;
+            text-align: center;
+        }
+        header div{
+            width: 29%;
+            height: 10px;
+            margin-top: 12%;
+            margin-bottom: 0;
+            margin-right:4px ;
+            
+        }
+        header img{
+            width: 100px;
+            height: 100px;
+        }
+        .one{
+            background-color: #1d6662;
+        }
+        .two{
+            background-color: #1D7A7A;
+        }
+        .three{
+            background-color: gray;
+        }
+        .header {
+            background-color: #1B2B54;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: white;
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        
+        .title-button {
+            background-color: #1D7A7A;
+            color: white;
+            border: white solid ;
+            padding: 1rem 3rem;
+            font-size: 1.5rem;
+            border-radius: 9999px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .title-button:hover {
+            background-color: #166363;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-item::before {
+            content: "▶";
+            color: #2563eb;
+        }
+
+        .info-link {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .info-link:hover {
+            text-decoration: underline;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .citation {
+            font-size: 0.875rem;
+            color: #4b5563;
+        }
+
+     
+
+        .cat-owners { background-color: #008080; }
+        .fish-owners { background-color: #4C9C64; }
+        .consultations { background-color: #CC0000; }
+        .dog-owners { background-color: #90C957; }
+        .small-animals { background-color: #8B2BE2; }
+
+        .bottom-nav {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .nav-button {
+            padding: 8px 24px;
+            border: wheat solid ;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            font-size: 0.875rem;
+            transition: opacity 0.2s;
+        }
+
+        .nav-button:hover {
+            opacity: 0.9;
+        }
+
+        
+        .end-button {
+            border: black solid ;
+            background-color: rgb(229, 231, 235);
+            padding: 8px 24px;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .end-button span {
+            color: rgb(17, 24, 39);
+            font-family: system-ui, -apple-system, sans-serif;
+            font-weight: 500;
+        }
+        .nav-cat { background-color: #1D7A7A; }
+        .nav-cat:hover { background-color: #166363; }
+        
+        .nav-dog { background-color: #90BE6D; }
+        .nav-dog:hover { background-color: #7da55d; }
+        
+        .nav-fish { background-color: #43AA8B; }
+        .nav-fish:hover { background-color: #389178; }
+        
+        .nav-small { background-color: #9D4EDD; }
+        .nav-small:hover { background-color: #8a44c4; }
+        
+        .nav-consult { background-color: #F94144; }
+        .nav-consult:hover { background-color: #f82828; }
+        
+        .nav-home { background-color: #1B2B52; }
+        .nav-home:hover { background-color: #142040; }
+        
+        .nav-end {
+            background-color: transparent;
+            border: 2px solid #1f2937;
+            color: #1f2937;
+        }
+    </style>
+</head>
+<body>
+    <header >
+        <div class="one"></div><div class="two"></div><div class="three"></div>
+        <img src="paradigmlogo.png" alt="Paradigm Pet Professionals Logo">
+        
+    </header>
+    <div class="header">
+        <button class="title-button">Cat Owners</button>
+    </div>
+
+    <main class="main-content">
+        <div class="info-section">
+            <ul class="info-list">
+                <li class="info-item">
+                    Kittens: Nursing or soft wet food, monitor growth, and vaccinations.
+                </li>
+                <li class="info-item">
+                    Adults (1-7 years): Controlled feeding to avoid obesity (diet, exercise, grooming) and preventative measures.
+                </li>
+                <li class="info-item">
+                    Seniors (7+ years): High-protein, low-fat diets and preventative measures.
+                </li>
+                <li class="info-item">
+                    Learn more from our site: 
+                    <a href="https://konzle.digital/paradigm/cats.html" class="info-link">
+                        (https://konzle.digital/paradigm/cats.html)
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="image-section">
+            <div class="image-container">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-26%20224614-xnKKNCq53QRX902zsbpEaP9guzstDa.png" alt="A person holding a black cat">
+                <p class="citation">
+                    Malmanger, E. & DVM. (2020, September 1). Complete cat health guide for every life stage. The Best Pet Health & Care Advice from Real Vets | PetMD. https://www.petmd.com/cat/general-health/complete-cat-health-guide-every-life-stage
+                </p>
+            </div>
+        </div>
+    </main>
+
+
+        <nav class="bottom-nav">
+            <button class="nav-button cat-owners" onclick="window.location.href='cats.html'">Cat Owners</button>
+            <button class="nav-button dog-owners" onclick="window.location.href='dogs.html'">Dog Owners</button>
+            <button class="nav-button fish-owners" onclick="window.location.href='fish.html'">Fish Owners</button>
+            <button class="nav-button small-animals" onclick="window.location.href='small-animals.html'">Small Animals</button>
+            <button class="nav-button consultations" onclick="window.location.href='consultations.html'">Consultations</button>
+            <button class="nav-button" style="background-color: #1B2B54;" onclick="window.location.href='index.html'">Home</button>
+            <button class="end-button"><span>END</span></button>
+                
+            
+        </nav>
+   
+</body>
+</html>

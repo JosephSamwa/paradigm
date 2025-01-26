@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Paradigm Pet Professionals</title>
+    <style>
+        :root {
+            --midnight-blue: #003B6D;
+            --blue-sky: #6699CC;
+            --dim-gray: #676767;
+            --silver: #BDBDBD;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dim-gray);
+            background-color: var(--white);
+        }
+
+        header {
+            background-color: var(--midnight-blue);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header img {
+            max-height: 80px;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: var(--blue-sky);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--silver);
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: var(--midnight-blue);
+            margin-bottom: 20px;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: var(--midnight-blue);
+            color: var(--silver);
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: var(--blue-sky);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--silver);
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            position: relative;
+        }
+
+        li a {
+            text-decoration: none;
+            color: var(--white);
+        }
+
+        li a:hover {
+            background-color: var(--silver);
+            color: var(--midnight-blue);
+            z-index: 1000;
+            padding: 10px 15px;
+        }
+        
+        .sub-menu {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: var(--midnight-blue);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        li:hover .sub-menu {
+            display: block;
+        }
+
+        .sub-menu li a {
+            white-space: nowrap;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid var(--silver);
+            border-radius: 5px;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--blue-sky);
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: var(--midnight-blue);
+            color: var(--white);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: var(--blue-sky);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="paradigmlogo.png" alt="Paradigm Pet Professionals Logo">
+        <div>
+            <h1>Testimonials</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li>
+                <a href="petcare.html">Guides</a>
+                <ul class="sub-menu">
+                    <li><a href="birds.html">Birds</a></li>
+                    <li><a href="cats.html">Cats</a></li>
+                    <li><a href="dogs.html">Dogs</a></li>
+                    <li><a href="fish.html">Fish</a></li>
+                    <li><a href="small-animals.html">Other Animals</a></li>
+                </ul>
+            </li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <h2>Testimonials</h2>
+        <div class="about-content">
+            <p>As always we look forward to hearing from you about our services. Do kindly leave us a review below.</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Leave a Review</h2>
+        
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><hr>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><hr>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea><br><hr>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Paradigm Pet Professionals | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

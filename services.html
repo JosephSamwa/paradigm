@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+        :root {
+            --midnight-blue: #003B6D;
+            --blue-sky: #6699CC;
+            --dim-gray: #676767;
+            --silver: #BDBDBD;
+            --white: #FFFFFF;
+        }
+        nav {
+            background-color: var(--blue-sky);
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--silver);
+        }
+
+        .hero {
+            background: linear-gradient(to bottom, var(--blue-sky), var(--silver));
+            color: var(--midnight-blue);
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .hero button {
+            background-color: var(--midnight-blue);
+            color: var(--white);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+
+        .hero button:hover {
+            background-color: var(--blue-sky);
+            color: var(--dim-gray);
+        }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slider-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-images img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .slider-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .slider-buttons button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: var(--white);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: var(--midnight-blue);
+            margin-bottom: 20px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .service-card {
+            background-color: var(--white);
+            border: 2px solid var(--midnight-blue);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+        }
+
+        footer {
+            background-color: var(--midnight-blue);
+            color: var(--silver);
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: var(--blue-sky);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--silver);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid var(--silver);
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: var(--midnight-blue);
+            color: var(--white);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .contact-form button:hover {
+            background-color: var(--blue-sky);
+            color: var(--dim-gray);
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            position: relative;
+        }
+
+        li a {
+            text-decoration: none;
+            color: var(--white);
+        }
+
+        li a:hover {
+            background-color: var(--silver);
+            color: var(--midnight-blue);
+            z-index: 1000;
+            padding: 10px 15px;
+        }
+        
+        .sub-menu {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: var(--midnight-blue);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        li:hover .sub-menu {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <header >
+        <div class="one"></div><div class="two"></div><div class="three"></div>
+        <img src="paradigmlogo.png" alt="Paradigm Pet Professionals Logo">
+        
+    </header>
+        
+            <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <li><a href="petcare.html">Guides</a>
+            <ul class="sub-menu">
+                <li><a href="birds.html">Birds</a></li>
+                <li><a href="cats.html">Cats</a></li>
+                <li><a href="dogs.html">Dogs</a></li>
+                <li><a href="fish.html">Fish</a></li>
+                <li><a href="small-animals.html">Other Animals</a></li>
+            </ul>
+        </li>
+        <a href="testimonials.html">Testimonials</a>
+    </nav>
+        
+    
+
+    <main>
+        <section class="hero">
+            <h1>Our Services</h1>
+            <p>Comprehensive, evidence-based pet care solutions for every pet lover.</p>
+        </section>
+
+        <section class="services">
+            <div class="service">
+                <h2>Virtual Consultations</h2>
+                <p>Book a virtual session with our pet experts to discuss your pet care needs from the comfort of your home. We provide actionable, evidence-based advice tailored to your pet's specific requirements.</p>
+            </div>
+
+            <div class="service">
+                <h2>One-on-One Consultations</h2>
+                <p>Get personalized advice for your furry, feathery, or scaly companion. We assess your pet's health and behavior to ensure their lifelong wellness.</p>
+            </div>
+
+            <div class="service">
+                <h2>Group Presentations</h2>
+                <p>Organize educational sessions for veterinary professionals, pet shelters, or breeding groups. These presentations are customizable to meet your team's needs and promote better pet care practices.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
