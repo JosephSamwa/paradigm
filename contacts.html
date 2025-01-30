@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - Paradigm Pet Pros</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        header{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: white;
+        }
+        header div{
+            width: 30%;
+            height: 10px;
+
+            margin-bottom: 0;
+            
+        }
+        .container {
+            background: linear-gradient(to bottom, #b8c6db, #f5f7fa);
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #1e3164;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .header h1 {
+            color: white;
+            text-align: center;
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header::before,
+        .header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 20px;
+            background-color: #1e3164;
+        }
+
+        .header::before {
+            left: -20px;
+        }
+
+        .header::after {
+            right: -20px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .contact-form {
+            flex: 1;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .logo {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto 20px;
+        }
+
+        .contact-form h2 {
+            color: #1e3164;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .contact-form p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+       
+        .bottom-nav {
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .nav-button {
+            padding: 8px 24px;
+            border: wheat solid ;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            font-size: 0.875rem;
+            transition: opacity 0.2s;
+        }
+
+        .nav-button:hover {
+            opacity: 0.9;
+        }
+
+
+        .cat-owners { background-color: #2d5c7f; }
+        .dog-owners { background-color: #76b041; }
+        .fish-owners { background-color: #3c8d50; }
+        .small-animals { background-color: #8b4d9f; }
+        .consultations { background-color: #c41e3a; }
+        .contacts { background-color: #1e3164; }
+        .end { background-color: #333333; }
+
+        a {
+            color: #1e3164;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .contact-info, .contact-form {
+                padding: 0;
+                margin-bottom: 20px;
+            }
+
+            .nav-buttons {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-button {
+                margin: 5px;
+            }
+        }
+        header{
+            width: 100%;
+            display: flex;
+            background-color: white;
+            text-align: center;
+        }
+        header div{
+            width: 30%;
+            height: 10px;
+            margin-top: 12%;
+            margin-bottom: 0;
+            margin-right:4px ;
+            
+        }
+        header img{
+            width: 100px;
+            height: 100px;
+        }
+        .one{
+            background-color: #1d6662;
+        }
+        .two{
+            background-color: #1D7A7A;
+        }
+        .three{
+            background-color: gray;
+        }
+        .arrow {
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <header >
+        <div class="one"></div><div class="two"></div><div class="three"></div>
+    </header>
+    <div class="container">
+
+        <div class="header">
+            <h1>Contacts</h1>
+        </div>
+        <nav class="nav-buttons">
+            <button class="nav-button cat-owners" onclick="window.location.href='cats.html'">Cat Owners</button>
+            <button class="nav-button dog-owners" onclick="window.location.href='dogs.html'">Dog Owners</button>
+            <button class="nav-button fish-owners" onclick="window.location.href='fish.html'">Fish Owners</button>
+            <button class="nav-button small-animals" onclick="window.location.href='small-animals.html'">Small Animals</button>
+            <button class="nav-button consultations" onclick="window.location.href='consultations.html'">Consultations</button>
+            <button class="nav-button" style="background-color: #1B2B54;" onclick="window.location.href='index.html'">Home</button>
+                <button class="nav-button contacts" onclick="window.location.href='contacts.html'">Contacts</button>
+               
+            </nav>
+        <main class="content">
+            <div class="contact-info">
+                <p><span class="arrow">➤</span>Email: support@paradigmpetpros.com</p>
+                <p> <span class="arrow">➤</span>Phone: (555) 123-PETS</p>
+                <p><span class="arrow">➤</span>Address: 123 Pet Lane, Pet City, PC 54321</p>
+                <p><span class="arrow">➤</span>Site: <a href="https://konzie.digital/paradigm/contact.html">https://konzie.digital/paradigm/contact.html</a></p>
+            </div>
+
+            <div class="contact-form">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-68Psigsa00vakstwnyZpcN2Ds6U9AI.png" alt="Paradigm Pet Pros Logo" class="logo">
+                <h2>Contact Us</h2>
+                <p>We're here to answer all your pet care questions!</p>
+                <form>
+                    <div class="form-group">
+                        <label for="message">Get in Touch</label>
+                        <input type="text" id="message" placeholder="Your message or question here">
+                    </div>
+                </form>
+            </div>
+        </main>
+
+     
+    </div>
+</body>
+</html>

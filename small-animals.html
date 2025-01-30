@@ -84,59 +84,101 @@
             height: auto;
         }
 
-        .navigation {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(8px);
-            padding: 1rem;
-        }
+     
 
-        .nav-buttons {
-            max-width: 64rem;
-            margin: 0 auto;
+        .cat-owners { background-color: #008080; }
+        .fish-owners { background-color: #4C9C64; }
+        .consultations { background-color: #CC0000; }
+        .dog-owners { background-color: #90C957; }
+        .small-animals { background-color: #8B2BE2; }
+
+        
+        .bottom-nav {
+            position: fixed;
+            width: 100%;
             display: flex;
+            justify-content: space-evenly;
+            gap: 8px;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 0.5rem;
         }
 
         .nav-button {
-            padding: 0.5rem 1.5rem;
-            border-radius: 9999px;
+            padding: 8px 24px;
+            border: wheat solid ;
+            border-radius: 50px;
             color: white;
-            text-decoration: none;
+            cursor: pointer;
+            font-size: 0.875rem;
+            transition: opacity 0.2s;
+        }
+
+        .nav-button:hover {
+            opacity: 0.9;
+        }
+
+
+        
+        .end-button {
+            border: black solid ;
+            background-color: rgb(229, 231, 235);
+            padding: 8px 24px;
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .end-button span {
+            color: rgb(17, 24, 39);
+            font-family: system-ui, -apple-system, sans-serif;
             font-weight: 500;
-            transition: background-color 0.2s;
         }
-
-        .nav-button.cat { background-color: #0d9488; }
-        .nav-button.cat:hover { background-color: #0f766e; }
-
-        .nav-button.dog { background-color: #22c55e; }
-        .nav-button.dog:hover { background-color: #16a34a; }
-
-        .nav-button.fish { background-color: #059669; }
-        .nav-button.fish:hover { background-color: #047857; }
-
-        .nav-button.small { background-color: #9333ea; }
-        .nav-button.small:hover { background-color: #7e22ce; }
-
-        .nav-button.consult { background-color: #dc2626; }
-        .nav-button.consult:hover { background-color: #b91c1c; }
-
-        .nav-button.home { background-color: #1e3164; }
-        .nav-button.home:hover { background-color: #162548; }
-
-        .nav-button.end {
-            background-color: white;
-            color: black;
-            border: 2px solid black;
-            border-radius: 0.5rem;
+        .nav-cat { background-color: #1D7A7A; }
+        .nav-cat:hover { background-color: #166363; }
+        
+        .nav-dog { background-color: #90BE6D; }
+        .nav-dog:hover { background-color: #7da55d; }
+        
+        .nav-fish { background-color: #43AA8B; }
+        .nav-fish:hover { background-color: #389178; }
+        
+        .nav-small { background-color: #9D4EDD; }
+        .nav-small:hover { background-color: #8a44c4; }
+        
+        .nav-consult { background-color: #F94144; }
+        .nav-consult:hover { background-color: #f82828; }
+        
+        .nav-home { background-color: #1B2B52; }
+        .nav-home:hover { background-color: #142040; }
+        
+        .nav-end {
+            background-color: transparent;
+            border: 2px solid #1f2937;
+            color: #1f2937;
         }
-        .nav-button.end:hover { background-color: #f3f4f6; }
+        .floating-buttons {
+    position: fixed;
+    
+    right: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.floating-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
@@ -147,7 +189,15 @@
             <h1 class="title">Small Animals</h1>
         </div>
     </header>
-
+    <nav class="bottom-nav">
+        <button class="nav-button cat-owners" onclick="window.location.href='cats.html'">Cat Owners</button>
+        <button class="nav-button dog-owners" onclick="window.location.href='dogs.html'">Dog Owners</button>
+        <button class="nav-button fish-owners" onclick="window.location.href='fish.html'">Fish Owners</button>
+        <button class="nav-button small-animals" onclick="window.location.href='small-animals.html'">Small Animals</button>
+        <button class="nav-button consultations" onclick="window.location.href='consultations.html'">Consultations</button>
+        <button class="nav-button" style="background-color: #1B2B54;" onclick="window.location.href='index.html'">Home</button>
+      
+    </nav>
     <main class="main-content">
         <div class="bullet-points">
             <p class="bullet-point">Birds, Hamsters, Gerbils, Chinchillas, GuineaPigs, Mice, and Hermit Crabs.</p>
@@ -162,16 +212,5 @@
         </div>
     </main>
 
-    <nav class="navigation">
-        <div class="nav-buttons">
-            <a href="/cat-owners" class="nav-button cat">Cat Owners</a>
-            <a href="/dog-owners" class="nav-button dog">Dog Owners</a>
-            <a href="/fish-owners" class="nav-button fish">Fish Owners</a>
-            <a href="/small-animals" class="nav-button small">Small Animals</a>
-            <a href="/consultations" class="nav-button consult">Consultations</a>
-            <a href="/" class="nav-button home">Home</a>
-            <a href="/end" class="nav-button end">END</a>
-        </div>
-    </nav>
 </body>
 </html>

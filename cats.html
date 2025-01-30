@@ -126,11 +126,10 @@
         .small-animals { background-color: #8B2BE2; }
 
         .bottom-nav {
-            position: relative;
-            bottom: 0;
+            position: fixed;
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             gap: 8px;
             flex-wrap: wrap;
         }
@@ -148,6 +147,7 @@
         .nav-button:hover {
             opacity: 0.9;
         }
+
 
         
         .end-button {
@@ -186,6 +186,31 @@
             border: 2px solid #1f2937;
             color: #1f2937;
         }
+        .floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.floating-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
@@ -197,7 +222,15 @@
     <div class="header">
         <button class="title-button">Cat Owners</button>
     </div>
-
+    
+    <nav class="bottom-nav">
+        <button class="nav-button cat-owners" onclick="window.location.href='cats.html'">Cat Owners</button>
+        <button class="nav-button dog-owners" onclick="window.location.href='dogs.html'">Dog Owners</button>
+        <button class="nav-button fish-owners" onclick="window.location.href='fish.html'">Fish Owners</button>
+        <button class="nav-button small-animals" onclick="window.location.href='small-animals.html'">Small Animals</button>
+        <button class="nav-button consultations" onclick="window.location.href='consultations.html'">Consultations</button>
+        <button class="nav-button" style="background-color: #1B2B54;" onclick="window.location.href='index.html'">Home</button>
+    </nav>
     <main class="main-content">
         <div class="info-section">
             <ul class="info-list">
@@ -230,17 +263,6 @@
     </main>
 
 
-        <nav class="bottom-nav">
-            <button class="nav-button cat-owners" onclick="window.location.href='cats.html'">Cat Owners</button>
-            <button class="nav-button dog-owners" onclick="window.location.href='dogs.html'">Dog Owners</button>
-            <button class="nav-button fish-owners" onclick="window.location.href='fish.html'">Fish Owners</button>
-            <button class="nav-button small-animals" onclick="window.location.href='small-animals.html'">Small Animals</button>
-            <button class="nav-button consultations" onclick="window.location.href='consultations.html'">Consultations</button>
-            <button class="nav-button" style="background-color: #1B2B54;" onclick="window.location.href='index.html'">Home</button>
-            <button class="end-button"><span>END</span></button>
-                
-            
-        </nav>
-   
+    
 </body>
 </html>

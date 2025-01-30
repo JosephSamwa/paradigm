@@ -75,7 +75,31 @@
         }
 
      
+        .floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
 
+.floating-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
        
     </style>
 </head>
@@ -88,7 +112,15 @@
     <div class="header">
         <h1 class="title">Consultations</h1>
     </div>
-
+    
+    <nav class="bottom-nav">
+        <button class="nav-button cat-owners" onclick="window.location.href='cats.html'">Cat Owners</button>
+        <button class="nav-button dog-owners" onclick="window.location.href='dogs.html'">Dog Owners</button>
+        <button class="nav-button fish-owners" onclick="window.location.href='fish.html'">Fish Owners</button>
+        <button class="nav-button small-animals" onclick="window.location.href='small-animals.html'">Small Animals</button>
+        <button class="nav-button consultations" onclick="window.location.href='consultations.html'">Consultations</button>
+        <button class="nav-button" style="background-color: #1B2B54;" onclick="window.location.href='index.html'">Home</button>
+    </nav>
     <div class="container">
         <div class="services">
             <div class="service-item">
@@ -160,18 +192,10 @@
                         <option value="senior">9+ years</option>
                     </select>
                 </div>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </div>
 
-    <nav class="bottom-nav">
-        <button class="nav-button cat-owners" onclick="window.location.href='cats.html'">Cat Owners</button>
-        <button class="nav-button dog-owners" onclick="window.location.href='dogs.html'">Dog Owners</button>
-        <button class="nav-button fish-owners" onclick="window.location.href='fish.html'">Fish Owners</button>
-        <button class="nav-button small-animals" onclick="window.location.href='small-animals.html'">Small Animals</button>
-        <button class="nav-button consultations" onclick="window.location.href='consultations.html'">Consultations</button>
-        <button class="nav-button" style="background-color: #1B2B54;" onclick="window.location.href='index.html'">Home</button>
-        <button class="end-button"><span>END</span></button>
-    </nav>
 </body>
 </html>
